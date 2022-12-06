@@ -10,5 +10,9 @@ jobs:
           with:
             node-version: '18'
         - run: npm install -g bats
-        - run: bats -v
+        - run: |
+            echo "Node version: `node -v`"
+            echo "Npm version: `npm -v`"
+            echo "Bats version: `bats -v`"
+            
         
